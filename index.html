@@ -284,7 +284,7 @@ function loadNextQuestion() {
     document.getElementById('answerDetails').innerHTML = ''; // Clear the answer details
 }
 
-const functionUrl = "https://us-central1-knowcheck.cloudfunctions.net/analyzeAnswer"
+const functionUrl = "https://us-central1-inpatientcriteria-964c3.cloudfunctions.net/analyzeAnswer"
 
 async function analyzeAnswerFunction({ textContent, diagnosisName, correctCriteria }) {
     const response = await fetch(functionUrl, {
